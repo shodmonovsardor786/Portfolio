@@ -48,6 +48,17 @@ body {
 	margin: 0 auto;
 }
 
+
+/* ///////////////// */
+/* SECTION HEDAER */
+/* ///////////////// */
+
+.header-section {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+}
+
 .nav {
 	display: flex;
 	position: fixed;
@@ -57,10 +68,6 @@ body {
 	justify-content: space-between;
 	padding: 10px;
 	transition: 0.5s ease;
-}
-
-.home {
-	display: none;
 }
 
 .fixed_style {
@@ -96,6 +103,10 @@ body {
 	flex-grow: 1;
 }
 
+.home {
+	display: none;
+}
+
 .nav__link {
 	padding: 12px 20px;
 	text-decoration: none;
@@ -119,20 +130,11 @@ body {
 	border: 1px solid white;
 }
 
-/*=======================*/
-
-.header-section {
-	height: 100vh;
-	display: flex;
-	align-items: center;
-}
-
 .header__main {
 	width: 90%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	/* margin: 60px 0 0; */
 	padding: 50px;
 	padding-left: 0;
 	color: #fff;
@@ -181,7 +183,12 @@ body {
 	display: block;
 	margin: 100px auto;
 }
+
+
 /*==================================*/
+/* ABOUT ME */
+/*==================================*/
+
 
 .aboutMeSection {
 	height: 100vh;
@@ -189,7 +196,7 @@ body {
 	align-items: center;
 }
 
-.about-me{
+.about-me {
 	width: 90%;
 	padding: 40px;
 	margin-left: auto;
@@ -223,18 +230,12 @@ b span {
 	text-shadow: 0 0 5px white;
 }
 
-.about-me__list {
-	margin-top: 10px;
-	padding: 10px;
-}
-
-.about-me__item {
-	margin: 0;
-	list-style-type: none;
-	padding: 7px;
-}
 
 /*==================================*/
+/* MY PROJECT */
+/*==================================*/
+
+
 .my-projects {
 	width: 100%;
 	padding: 40px 0 0;
@@ -252,7 +253,6 @@ b span {
 	margin: 20px 0 50px;
 	transform: translateX(-1500px);
 }
-
 
 .my-projects__heading--style {
 	animation-name: right;
@@ -309,6 +309,11 @@ b span {
 	line-height: 1.5;
 }
 
+.project__heading {
+	font-size: 26px;
+	margin: 20px 0;
+}
+
 .instrument {
 	padding: 7px;
 	margin-right: 5px;
@@ -320,11 +325,6 @@ b span {
 
 .instrument span {
 	margin-top: 2px;
-}
-
-.project__heading {
-	font-size: 26px;
-	margin: 20px 0;
 }
 
 .project__text {
@@ -351,6 +351,11 @@ b span {
 	display: block;
 	border-radius: 20px;
 }
+
+
+/* //////////////////////////// */
+/* FOOTER */
+/* //////////////////////////// */
 
 
 .footer {
