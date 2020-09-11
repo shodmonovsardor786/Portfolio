@@ -13,12 +13,16 @@
 	.container {
 		max-width: 960px;
 	}
+
 	section {
-		position: relative;
-		padding: 0;
-		margin: 0;
+		height: auto !important;
+		margin: 100px 0;
 	}
 	
+	.header-section {
+		margin-top: 0;
+	}
+
 	.header {
 		width: 100%;
 	}
@@ -26,6 +30,7 @@
 	.header__main {
 		width: 100%;
 		padding: 50px;
+		margin-top: 150px;
 		flex-direction: column;
 		border-radius: 0%;
 	}
@@ -66,7 +71,7 @@
 	
 	.container {
 		max-width: 920px;
-	}
+	} 
 }
 
 @media (max-width: 900px) {
@@ -74,7 +79,7 @@
 	.container {
 		max-width: 880px;
 	}
-
+	
 	.main__heading {
 		font-size: 30px;
 	}
@@ -99,6 +104,7 @@
 	.nav__link {
 		padding: 7px 10px;
 		font-size: 14px;
+		border: 1px solid snow;
 	}
 	
 	.about-me__heading {
@@ -108,7 +114,7 @@
 	.about-me__text {
 		font-size: 16px;
 	}
-
+	
 	.project {
 		border-width: 5px;
 	}
@@ -139,7 +145,7 @@
 	.project__text {
 		font-size: 14px;
 	}
-
+	
 	.project__link {
 		display: inline-block;
 		top: 7px;
@@ -149,19 +155,19 @@
 		font-size: 6px;
 		border-radius: 20px;
 		padding: 3px;
-
+		
 		background-color: rgba(0,	0,	0,	0.5);
 		box-shadow: 0 1px 2px grey;
 		border: 1px solid white;
 	}
-
+	
 	.copyright {
 		font-size: 12px;
 	}
 }
 
 @media (max-width: 800px) {
-
+	
 	.container{
 		max-width: 780px;
 	}
@@ -172,15 +178,16 @@
 		flex-direction: column;
 	}
 
-	.nav {
-		position: relative;
-		margin-bottom: 100px;
+	.header__main {
+		padding: 20px;
+		margin-top: 20px;
 	}
 	
-	.fixed_style {
-		none;
+	.nav {
+		position: relative;
+		margin-bottom: 50px;
 	}
-
+	
 	.nav__list {
 		justify-content: space-between;
 	}
@@ -188,32 +195,46 @@
 	.nav__link span {
 		display: none;
 	}
+
+	.about-me {
+		padding: 20px;;
+	}
 	
+	.my-projects__heading {
+		margin-bottom: 20px;
+	}
+
 	.project__img {
 		height: 150px;
 	}
-
+	
 	.project iframe {
 		height: 150px;
 	}
-
+	
 	.project__heading {
 		font-size: 13px;
 	}
-
+	
 	.instrument {
 		font-size: 8px;
 	}
-
+	
 	.project__text {
 		font-size: 10px;
 	}
 }
 
 @media (max-width: 680px) {
-
+	
 	.container {
 		max-width: 660px;
+	}
+	
+	.logo {
+		display: block;
+		margin: 0;
+		margin-bottom: 20px;
 	}
 	
 	.nav__list {
@@ -222,36 +243,47 @@
 		display: block;
 		text-align: center;
 	}
+	
+	.nav__link {
+		background-color: rgba(0,	0,	0,	0.5);
+		border: 1px solid snow;
+	}
 }
 
 @media (max-width: 600px) {
+
 	.container {
 		max-width: 580px;
 	}
-
+	
 	.about-me__text {
 		font-size: 13px;
 	}
-
+	
 	.project {
 		width: 70%;
 	}
-
+	
 	.project iframe {
 		height: 220px;
 	}
-
+	
 	.project__img {
 		height: 220px;
 	}
- }
+}
 
- @media (max-width: 400px) {
-	 .container {
-		 max-width: 380px;
-	 }
-
-	 .project {
-		 width: 90%;
-	 }
- }
+@media (max-width: 420px) {
+	.container {
+		max-width: 400px;
+	}
+	
+	.main__heading {
+		font-size: 20px;
+		margin-bottom: 10px;
+	}	
+	
+	.project {
+		width: 90%;
+	}	
+}
