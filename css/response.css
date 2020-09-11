@@ -309,3 +309,19 @@
 			width: 90%;
 		}	
 	}
+
+
+	@media (max-width: 350px) {
+		body {
+				background-image:  
+			linear-gradient(rgba(0,0,0,0.2) 10%,
+			rgba(0,0,0,0.5) 30%,
+			rgba(0,0,0,0.7) 50%,
+			rgba(0,0,0,0.9) 90%),
+			url("../img/background-img_400.jpg");
+			background-position: center center;
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+	}
