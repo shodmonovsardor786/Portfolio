@@ -9,6 +9,19 @@
 }
 
 @media (max-width: 1000px) {
+	body {
+		min-height: 100vh;
+		background-image:  
+		linear-gradient(rgba(0,0,0,0.2) 10%,
+		rgba(0,0,0,0.5) 30%,
+		rgba(0,0,0,0.7) 50%,
+		rgba(0,0,0,0.9) 90%),
+		url("../img/background-img_1000.jpg");
+		background-position: center center;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
 	
 	.container {
 		max-width: 960px;
@@ -75,6 +88,21 @@
 }
 
 @media (max-width: 900px) {
+	
+	body {
+		min-height: 100vh;
+		background-image:  
+		linear-gradient(rgba(0,0,0,0.2) 10%,
+		rgba(0,0,0,0.5) 30%,
+		rgba(0,0,0,0.7) 50%,
+		rgba(0,0,0,0.9) 90%),
+		url("../img/background-img_900.jpg");
+		background-position: center center;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	
 	.container {
 		max-width: 880px;
 	}
@@ -98,6 +126,7 @@
 	.nav__list {
 		width: 100%;
 		margin-left: 0;
+		text-align: center;
 	}
 	
 	.nav__link {
@@ -166,16 +195,7 @@
 @media (max-width: 800px) {
 	
 	body {
-		background-image:  
-		linear-gradient(rgba(0,0,0,0.2) 10%,
-		rgba(0,0,0,0.5) 30%,
-		rgba(0,0,0,0.7) 50%,
-		rgba(0,0,0,0.9) 90%),
-		url("../img/background-img_800.jpg");
-		background-position: center center;
-		background-attachment: fixed;
-		background-repeat: no-repeat;
-		background-size: cover;
+		background: none;
 	}
 	
 	.container {
@@ -196,22 +216,47 @@
 	.nav {
 		position: relative;
 		margin-bottom: 50px;
+		background-color: #092532;
+		/* box-shadow: 0 5px 5px snow; */
 	}
 	
 	.nav__list {
 		justify-content: space-between;
 	}
+
+	.main {
+		width: 90%;
+		margin: 20px auto 0;
+		border-radius: 20px;
+		background-color: #092532;
+	}
 	
-	.nav__link span {
-		display: none;
+	.main__img {
+		border-radius: 50%;
+		box-shadow: 0 0 10px black;
+		background-color: #092532;
 	}
 	
 	.about-me {
-		padding: 20px;;
+		width: 90%;
+		padding: 20px;
+		margin: 20px auto 0;
+		border-radius: 20px;
+		background-color: #092532;
+	}
+
+	.about-me__heading {
+		text-shadow: -5px -5px 10px black;
 	}
 	
 	.my-projects__heading {
 		margin-bottom: 20px;
+		text-shadow: -5px -5px 10px black;
+		color: #092532;
+	}
+
+	.project {
+		background-color: #092532;
 	}
 	
 	.project__img {
@@ -233,6 +278,10 @@
 	.project__text {
 		font-size: 10px;
 	}	
+
+	.footer {
+		background-color: #092532;
+	}
 }
 @media (max-width: 700px) { 
 	.container {
@@ -247,81 +296,55 @@
 	
 	.nav__list {
 		margin: 0;
-		padding: 0;
-		display: block;
+		padding: 0;		
 		text-align: center;
 	}
 	
 	.nav__link {
-		background-color: rgba(0,	0,	0,	0.5);
+		font-size: 12px;
 		border: 1px solid snow;
 	}
 }
+
+@media (max-width: 600px) {	
 	
-	@media (max-width: 600px) {	
-		
-		.container {
-			max-width: 580px;
-		}
-		
-		.about-me__text {
-			font-size: 13px;
-		}
-		
-		.project {
-			width: 70%;
-		}
-		
-		.project iframe {
-			height: 220px;
-		}
-		
-		.project__img {
-			height: 220px;
-		}
+	.container {
+		max-width: 580px;
 	}
 	
-	@media (max-width: 420px) {
-		
-		body {
-			background-image:  
-			linear-gradient(rgba(0,0,0,0.2) 10%,
-			rgba(0,0,0,0.5) 30%,
-			rgba(0,0,0,0.7) 50%,
-			rgba(0,0,0,0.9) 90%),
-			url("../img/background-img_400.jpg");
-			background-position: center center;
-			background-attachment: fixed;
-			background-repeat: no-repeat;
-			background-size: cover;
-		}
-		
-		.container {
-			max-width: 400px;
-		}
-		
-		.main__heading {
-			font-size: 20px;
-			margin-bottom: 10px;
-		}	
-		
-		.project {
-			width: 90%;
-		}	
+	.about-me__text {
+		font-size: 13px;
+	}
+	
+	.project {
+		width: 70%;
+	}
+	
+	.project iframe {
+		height: 220px;
+	}
+	
+	.project__img {
+		height: 220px;
+	}
+}
+
+@media (max-width: 420px) {
+	
+	.container {
+		max-width: 400px;
+	}
+	
+	.nav__link span {
+		display: none;
 	}
 
-
-	@media (max-width: 350px) {
-		body {
-				background-image:  
-			linear-gradient(rgba(0,0,0,0.2) 10%,
-			rgba(0,0,0,0.5) 30%,
-			rgba(0,0,0,0.7) 50%,
-			rgba(0,0,0,0.9) 90%),
-			url("../img/background-img_400.jpg");
-			background-position: center center;
-			background-attachment: fixed;
-			background-repeat: no-repeat;
-			background-size: cover;
-		}
-	}
+	.main__heading {
+		font-size: 20px;
+		margin-bottom: 10px;
+	}	
+	
+	.project {
+		width: 90%;
+	}	
+}

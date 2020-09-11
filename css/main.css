@@ -18,7 +18,7 @@ body {
 		rgba(0,0,0,0.9) 90%),
 	url("../img/background-img.jpg");
 	background-position: center center;
-	background-attachment: fixed;
+	background-attachment: fixed !important;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
