@@ -6,6 +6,22 @@
 	.project {
 		width: 45%;
 	}
+
+	.project__link {
+		display: inline-block;
+		top: 50%;
+		left:  10px;
+		right: auto;
+		bottom: auto;
+		font-size: 12px;
+		border-radius: 20px;
+		color: red
+		;
+		padding: 5px;
+		background-color: rgba(0,	0,	0,	1);
+		box-shadow: 0 1px 2px grey;
+		border: 1px solid white;
+	}
 }
 
 @media (max-width: 1000px) {
@@ -116,7 +132,7 @@
 	.main__heading-text {
 		font-size: 10px;
 	}
-
+	
 	.main__img {
 		border-radius: 50%;
 	}
@@ -180,20 +196,6 @@
 		font-size: 14px;
 	}
 	
-	.project__link {
-		display: inline-block;
-		top: 7px;
-		left:  10px;
-		right: auto;
-		bottom: auto;
-		font-size: 6px;
-		border-radius: 20px;
-		padding: 3px;
-		background-color: rgba(0,	0,	0,	0.5);
-		box-shadow: 0 1px 2px grey;
-		border: 1px solid white;
-	}
-	
 	.copyright {
 		font-size: 12px;
 	}
@@ -228,7 +230,7 @@
 	.nav__list {
 		justify-content: space-between;
 	}
-
+	
 	.main {
 		width: 90%;
 		margin: 20px auto 0;
@@ -249,7 +251,7 @@
 		border-radius: 20px;
 		background-color: #092532;
 	}
-
+	
 	.about-me__heading {
 		text-shadow: -5px -5px 10px black;
 	}
@@ -259,7 +261,7 @@
 		text-shadow: -2px -2px 7px black;
 		color: #092532;
 	}
-
+	
 	.project {
 		background-color: #092532;
 	}
@@ -283,7 +285,7 @@
 	.project__text {
 		font-size: 10px;
 	}	
-
+	
 	.footer {
 		background-color: #092532;
 	}
@@ -316,7 +318,7 @@
 	.container {
 		max-width: 580px;
 	}
-
+	
 	.main__img {
 		width: 100px;
 		height: 100px;
@@ -348,7 +350,7 @@
 	.nav__link span {
 		display: none;
 	}
-
+	
 	.main__heading {
 		font-size: 20px;
 		margin-bottom: 10px;
@@ -363,7 +365,7 @@
 	.nav__list {
 		flex-direction: column;
 	}
-
+	
 	.nav__item {
 		margin-top: 2px;
 	}
