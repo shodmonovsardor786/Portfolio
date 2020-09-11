@@ -341,7 +341,6 @@ b span {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	padding-top: 250px;
 	background-color: rgba(0,0,0,0.5);
 	font-size: 30px;
 	color: #fff;
@@ -350,7 +349,9 @@ b span {
 }
 
 .project:hover .project__link {
-	display: block;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	backdrop-filter: blur(3px);
 	border-radius: 20px;
 }
