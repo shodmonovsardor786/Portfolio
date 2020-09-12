@@ -304,7 +304,7 @@
 	
 	.nav__list {
 		margin: 0;
-		padding: 0;		
+		padding: 10px;	
 		text-align: center;
 	}
 	
@@ -340,7 +340,7 @@
 
 @media (max-width: 460px) {
 	.nav__link {
-		padding: 4px;
+		padding: 5px;
 	}
 }
 
