@@ -342,6 +342,10 @@
 	.nav__link {
 		padding: 5px;
 	}
+
+	.nav__item {
+		padding: 2px;
+	}
 }
 
 @media (max-width: 420px) {
