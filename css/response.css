@@ -6,21 +6,20 @@
 	.project {
 		width: 45%;
 	}
-
+	
 	.project__link {
 		display: inline-block;
-		top: 50%;
-		left:  10px;
-		right: auto;
-		bottom: auto;
+		position: static;
 		font-size: 12px;
-		border-radius: 20px;
-		color: red
-		;
-		padding: 5px;
-		background-color: rgba(0,	0,	0,	1);
-		box-shadow: 0 1px 2px grey;
-		border: 1px solid white;
+		color: red;
+		text-shadow: none;
+		text-decoration: underline;
+		background-color: transparent;
+		box-shadow: none;
+	}
+	
+	.project:hover .project__link {
+		display: inline-block;
 	}
 }
 
@@ -222,7 +221,6 @@
 	}
 	
 	.nav {
-		position: relative;
 		margin-bottom: 50px;
 		background-color: #092532;
 	}
@@ -233,9 +231,11 @@
 	
 	.main {
 		width: 90%;
-		margin: 20px auto 0;
+		margin: 150px auto 0;
 		border-radius: 20px;
 		background-color: #092532;
+		/* -webkit-box-reflect: below 0px	linear-gradient(transparent 70%, blue); */
+
 	}
 	
 	.main__img {
@@ -253,11 +253,17 @@
 	}
 	
 	.about-me__heading {
+		font-size: 40px;
 		text-shadow: -5px -5px 10px black;
 	}
 	
+	.about-me__text {
+		font-size: 18px;
+	}
+	
 	.my-projects__heading {
-		margin-bottom: 20px;
+		margin-bottom: 40px;
+		font-size: 60px;
 		text-shadow: -2px -2px 7px black;
 		color: #092532;
 	}
@@ -275,7 +281,7 @@
 	}
 	
 	.project__heading {
-		font-size: 13px;
+		font-size: 20px;
 	}
 	
 	.instrument {
@@ -283,7 +289,7 @@
 	}
 	
 	.project__text {
-		font-size: 10px;
+		font-size: 18px;
 	}	
 	
 	.footer {
@@ -291,14 +297,9 @@
 	}
 }
 @media (max-width: 700px) { 
+	
 	.container {
 		max-width: 660px;
-	}
-	
-	.logo {
-		display: block;
-		margin: 0;
-		margin-bottom: 20px;
 	}
 	
 	.nav__list {
@@ -320,15 +321,11 @@
 	}
 	
 	.main__img {
-		width: 100px;
-		height: 100px;
+		width: 150px;
+		height: 150px;
 	}
 	
-	.about-me__text {
-		font-size: 13px;
-	}
-	
-	.project {
+	.project {		
 		width: 70%;
 	}
 	
@@ -341,18 +338,39 @@
 	}
 }
 
+@media (max-width: 460px) {
+	.nav__link {
+		padding: 4px;
+	}
+}
+
 @media (max-width: 420px) {
 	
 	.container {
 		max-width: 400px;
 	}
 	
+	.logo {
+		display: none;
+	}
+	
+	.nav__link {
+		color: snow;
+		padding: 0;
+		border: none;
+		text-shadow: 0 0 5px snow;
+	}
+	
 	.nav__link span {
 		display: none;
 	}
 	
+	.main {
+		margin-top: 80px;
+	}
+	
 	.main__heading {
-		font-size: 20px;
+		font-size: 30px;
 		margin-bottom: 10px;
 	}	
 	
@@ -363,7 +381,7 @@
 
 @media (max-width: 350px) {
 	.nav__list {
-		flex-direction: column;
+		/* flex-direction: column; */
 	}
 	
 	.nav__item {

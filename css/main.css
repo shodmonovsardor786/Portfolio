@@ -13,9 +13,9 @@ body {
 	min-height: 100vh;
 	background-image:  
 	linear-gradient(rgba(0,0,0,0.2) 10%,
-		rgba(0,0,0,0.5) 30%,
-		rgba(0,0,0,0.7) 50%,
-		rgba(0,0,0,0.9) 90%),
+	rgba(0,0,0,0.5) 30%,
+	rgba(0,0,0,0.7) 50%,
+	rgba(0,0,0,0.9) 90%),
 	url("../img/background-img.jpg");
 	background-position: center center;
 	background-attachment: fixed !important;
@@ -305,6 +305,9 @@ b span {
 }
 
 .project__info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	text-align: center;
 	color: #fff;
 	line-height: 1.5;
@@ -331,6 +334,7 @@ b span {
 .project__text {
 	font-size: 18px;
 	margin: 10px 0;
+	flex-grow: 1;
 }
 
 .project__link {
