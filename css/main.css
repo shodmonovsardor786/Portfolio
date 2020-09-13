@@ -254,21 +254,6 @@ b span {
 	transform: translateX(-1500px);
 }
 
-.my-projects__heading--style {
-	animation-name: right;
-	animation-duration: 1s;
-	animation-fill-mode: forwards;
-}
-
-@keyframes right {
-	from {
-		transform: translateX(-1500px);
-	}
-	to{
-		transform: translateX(0);
-	}
-} 
-
 .projects {
 	width: 100%;
 	display: flex;
