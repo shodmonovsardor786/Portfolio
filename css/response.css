@@ -24,6 +24,7 @@
 }
 
 @media (max-width: 1000px) {
+	
 	body {
 		min-height: 100vh;
 		background-image:  
@@ -234,8 +235,6 @@
 		margin: 150px auto 0;
 		border-radius: 20px;
 		background-color: #092532;
-		/* -webkit-box-reflect: below 0px	linear-gradient(transparent 70%, blue); */
-
 	}
 	
 	.main__img {
@@ -383,11 +382,7 @@
 	}	
 }
 
-@media (max-width: 350px) {
-	.nav__list {
-		/* flex-direction: column; */
-	}
-	
+@media (max-width: 350px) {	
 	.nav__item {
 		margin-top: 2px;
 	}
